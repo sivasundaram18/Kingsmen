@@ -1,0 +1,6 @@
+CAR Reference: CAR-2013-05-002
+Name: Suspicious Run Locations
+Data Source:Process Create
+
+KQL: event.code:1 and (process.executable: *c\:\\windows\\tasks\\* or process.executable: *recycler\\* or process.executable: *c\: or process.executable:*c\:\\windows\\debug\\* or process.executable:*c\:\\windows\\fonts\\* or process.executable:*c\:\\windows\\help\\* or process.executable:*c\:\\windows\\drivers\\* or process.executable:*c\:\\windows\\addins\\* or process.executable:*c\:\\windows\\cursors\\* or process.executable:*c\:\\windows\\system32\tasks\\* )
+
