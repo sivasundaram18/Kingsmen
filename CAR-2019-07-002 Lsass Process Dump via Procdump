@@ -1,0 +1,5 @@
+CAR Reference: CAR-2019-07-002
+Name: Lsass Process Dump via Procdump
+Data Source: Process Create
+
+KQL: event.code:1 and process.executable: *procdump*.exe and process.working_directory: *lsass*
