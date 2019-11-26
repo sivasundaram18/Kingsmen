@@ -1,0 +1,6 @@
+CAR Reference: CAR-2016-04-004
+Name: Successful Local Account Login
+Data Source: Security event log
+
+KQL: event.code:4624 and not winlog.event_data.targetusername:"anonymous logon"  and winlog.event_data.authenticationpackagename : "ntlm"
+
