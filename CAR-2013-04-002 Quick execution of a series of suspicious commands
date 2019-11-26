@@ -1,0 +1,7 @@
+CAR Reference : CAR-2013-04-002
+Name: Quick execution of a series of suspicious commands
+Data Source: Process Create
+
+KQL: event.code:1 and (process.name:arp.exe or process.name:at.exe or process.name:attrib.exe or process.name:cscript.exe or process.name:dsquery.exe or process.name:hostname.exe or process.name:ipconfig.exe or process.name:mimikatz.exe or process.name:nbstat.exe or process.name:net.exe or process.name:netsh.exe or process.name:nslookup.exe or process.name:ping.exe or process.name:queser.exe or process.name:qwinsta.exe or process.name:reg.exe or process.name:runas.exe or process.name:sc.exe or process.name:schtasks.exe or process.name:ssh.exe or process.name:systeminfo.exe or process.name:taskkill.exe or process.name:telnet.exe or process.name:tracert.exe or process.name:wscript.exe or process.name:xcopy.exe)
+
+
