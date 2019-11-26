@@ -1,0 +1,6 @@
+CAR Reference: CAR-2013-02-003
+Name: Processes Spawning cmd.exe
+Data Source: Process Create
+
+KQL: event.code:1 and process.executable : *\\cmd.exe
+
