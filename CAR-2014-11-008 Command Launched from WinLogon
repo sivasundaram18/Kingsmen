@@ -1,0 +1,5 @@
+CAR Reference: CAR-2014-11-008
+Name: Command Launched from WinLogon
+Data Source: Process Create
+
+KQL: event.code:1 and process.parent.executable :c\:\\windows\\*\\winlogon.exe and process.executable : c\:\\windows\\*\\cmd.exe
