@@ -1,0 +1,5 @@
+CAR Reference: CAR-2016-03-002
+Name: Create Remote Process via WMIC
+Data Source: Process Create
+
+KQL: event.code:1 and process.executable :*\\wmic.exe and process.args : *process call create* and process.args : */node\:*
