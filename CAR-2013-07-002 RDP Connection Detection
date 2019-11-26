@@ -1,0 +1,5 @@
+CAR Reference: CAR-2013-07-002
+Name: RDP Connection Detection
+Data Source: Security
+
+KQL: event.code:4624 and winlog.event_data.logontype :10
