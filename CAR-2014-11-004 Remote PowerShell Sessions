@@ -1,0 +1,5 @@
+CAR Reference: CAR-2014-11-004
+Name: Remote PowerShell Sessions
+Data Source: Process Create
+
+KQL: event.code:1 and process.executable : *\\wsmprovhost.exe and process.parent.executable : *\\svchost.exe
