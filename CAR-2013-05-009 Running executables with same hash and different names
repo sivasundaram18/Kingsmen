@@ -1,0 +1,6 @@
+CAR Reference: CAR-2013-05-009
+Name: Running executables with same hash and different names
+Data Source: Process Create
+
+KQL: event.code:1 and (( process.name:cmd.exe process.name:powershell.exe process.name:powershell_ise.exe process.name:psexec.exe process.name:psexec.c process.name:cscript.exe process.name:wscript.exe process.name:mshta.exe process.name:regsvr32.exe process.name:wmic.exe process.name:certutil.exe process.name:rundll32.exe process.name:cmstp.exe process.name:msiexec.exe process.name:7z.exe process.name:winrar.exe) and not ( process.executable: *\\cmd.exe* process.executable: *\\powershell.exe* process.executable: *\\powershell_ise.exe* process.executable: *\\psexec.exe* process.executable: *\\psexec.c* process.executable: *\\cscript.exe* process.executable: *\\wscript.exe* process.executable: *\\mshta.exe* process.executable: *\\regsvr32.exe* process.executable: *\\wmic.exe* process.executable: *\\certutil.exe* process.executable: *\\rundll32.exe* process.executable: *\\cmstp.exe* process.executable: *\\msiexec.exe* process.executable: *\\7z.exe* process.executable: *\\winrar.exe*) ) )
+
