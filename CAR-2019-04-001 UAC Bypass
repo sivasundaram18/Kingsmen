@@ -1,0 +1,6 @@
+CAR Reference: CAR-2019-04-001
+Name: UAC Bypass
+Data Source: Process Create
+
+KQL: event.code:1 and winlog.event_data.integritylevel : "high" and process.parent.executable: "c\:\\windows\\system32\\fodhelper.exe" or process.args: *.exe\"*cleanmgr.exe /autoclean* or process.executable: c\:program files\\windows media player\\osk.exe or process.parent.executable: c\:windows\\system32\\slui.exe or (process.parent.executable : c\:\\windows\\system32\\dism.exe*.xml and not process.executable : c\:\\users\\*\\appdata\\local\\temp\\*\\dismhost.exe ) or (process.args : c\:\\windows\\system32\\wusa.exe*/quiet* and not winlog.user.name:not_translated and process.working_directory: c\:\\windows\\system32\\ and not process.parent.executable:c\:\\windows\\explorer.exe ) or (process.parent.executable: c\:\\windows\\*dccw.exe and process.executable: c\:\\windows\system32\cttune.exe)
+
