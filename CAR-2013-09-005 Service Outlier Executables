@@ -1,0 +1,6 @@
+CAR Reference: CAR-2013-09-005
+Name: Service Outlier Executables
+Data Source: System Event Log
+
+KQL: event.code:7045
+
