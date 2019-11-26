@@ -1,0 +1,5 @@
+CAR Reference: CAR-2014-04-003
+Name: Powershell Execution
+Data Source: Process Create
+
+KQL: event.code:1 and process.executable : *\\powershell.exe and not process.parent.executable : *\\explorer.exe
