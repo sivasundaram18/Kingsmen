@@ -1,0 +1,6 @@
+CAR Reference: CAR-2016-04-002
+Name: User Activity from Clearing Event Logs
+Data Source: Event log
+
+KQL: event.code:104
+
