@@ -1,0 +1,5 @@
+CAR Reference: CAR-2019-08-002
+Name: Active Directory Dumping via NTDSUtil
+Data Source: File Create
+
+KQL: evevnt.code:11 and file.path : *ntds.dit* and process.executable : *ntdsutil.exe
