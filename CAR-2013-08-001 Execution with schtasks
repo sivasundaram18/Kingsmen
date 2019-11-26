@@ -1,0 +1,5 @@
+CAR Reference: CAR-2013-08-001
+Name: Execution with schtasks
+Data Source: Process Create
+
+KQL: event.code:1 and process.executable :*\\schtasks.exe
