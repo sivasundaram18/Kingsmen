@@ -1,0 +1,5 @@
+CAR Reference: CAR-2014-05-002
+Name: Services launching Cmd
+Data Source: Process Create
+
+KQL: event.code:1 and process.executable : *\\cmd.exe and (process.parent.executable :*\\services.exe or process.parent.executable: *\\explorer.exe)
